@@ -2,6 +2,6 @@
 # ak-project3
 #Travel booking Project
 
-#https://page-log-sign-05.netlify.app/
+#page2-login-page.netlify.app
 #login-sign-up page
 
