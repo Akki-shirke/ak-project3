@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand'sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+    overflow-y: hidden;
+}
+
+section {
+    top: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    flex-wrap: wrap;
+    /* overflow: hidden; */
+}
+
+section span {
+    display: flex;
+    width: calc(6.25vw - 1px);
+    height: calc(6.25vw - 1px);
+    background: #181818;
+    transition: 1.15s;
+    border-radius: 5px;
+}
+
+section span:hover {
+    background: #0f0;
+    transition: 0s;
+}
+
+.singning {
+    position: absolute;
+    height: 60vh;
+    width: 400px;
+    background: #222;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 1px 5px rgb(193, 255, 183);
+}
+
+.singning .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.content h2 {
+    font-size: 2em;
+    color: #0f0;
+    text-transform: uppercase;
+}
+
+.content .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.content .form .inputBox {
+    position: relative;
+    width: 100%;
+}
+
+.inputBox input {
+    position: relative;
+    width: 100%;
+    background: #333;
+    border: none;
+    padding: 25px 10px 7.5px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.form .inputBox i {
+    position: absolute;
+    left: 0;
+    padding: 15px 10px;
+    font-style: normal;
+    color: #aaa;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.form .inputBox :focus~i,
+.form .inputBox :valid~i {
+    transform: translateY(-7.5px);
+    font-size: 0.8em;
+    color: #fff;
+}
+
+.form .links {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form .links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.form .links a:nth-child(2) {
+    color: #0f0;
+    font-weight: 600;
+}
+
+.form button {
+    padding: 10px 0px;
+    margin: 0 100px;
+    border-radius: 15px;
+}
+
+.form button:hover {
+    background: #0f0;
+}
