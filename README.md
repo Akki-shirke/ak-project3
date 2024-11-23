@@ -1,5 +1,5 @@
 <div>
-  <h3>Make MY Trip</h3>
+  <h3>Book My Trip</h3>
   <ul>
   <li>travel-book-p.netlify.app</li>
   <li>https://akki-shirke.github.io/web-designing-project/Travel-book</li>
